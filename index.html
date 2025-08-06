@@ -77,6 +77,10 @@ body::before {
     font-weight: 500;
     color: #ffc107;
 }
+.text-primary {
+    --bs-text-opacity: 1;
+    color: rgb(91 47 209) !important;
+}
 .hero h1 {
     font-size: 3rem;
     font-weight: 700;
@@ -117,7 +121,7 @@ body::before {
 .card {
     border: none;
     border-radius: 18px;
-    box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
     background: #fff;
     transition: all 0.4s ease;
 }
@@ -213,7 +217,7 @@ footer a {
   <div class="hero-content">
     <div class="subtitle">Founder & Head Coach | Leadership Expert</div>
     <h1>Transform Your Communication Skills</h1>
-    <p>14+ Years Experience | 25,000+ Students Trained | Corporate Coaching</p>
+    <p>17+ Years Experience | 27,000+ Students Trained | Corporate Coaching</p>
     <a href="#courses" class="btn btn-custom">Explore Courses</a>
   </div>
 </section>
@@ -254,6 +258,68 @@ footer a {
     </div>
   </div>
 </section>
+<section class="polaroid-section py-5">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      
+      <!-- Card 1 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="polaroid-card">
+          <img src="1.jpg" class="img-fluid" alt="Meeting">
+          <p><strong>Spoke up in meetings</strong> and got noticed for your brilliant ideas.</p>
+        </div>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="polaroid-card rotate-left">
+          <img src="2.jpg" class="img-fluid" alt="Promotion">
+          <p><strong>Landed that promotion</strong> (or dream client) because you owned the room.</p>
+        </div>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="polaroid-card rotate-right">
+          <img src="3.jpg" class="img-fluid" alt="Conversations">
+          <p><strong>Had deeper, more meaningful conversations</strong> with the people you love.</p>
+        </div>
+      </div>
+      
+      <!-- Card 4 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="polaroid-card">
+          <img src="4.jpg" class="img-fluid" alt="Confidence">
+          <p><strong>Or finally felt confident stepping on stage</strong>, knowing every word would land.</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<style>
+.polaroid-card {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transform: rotate(1deg);
+  transition: transform 0.3s ease;
+}
+.polaroid-card img {
+  border-radius: 6px;
+}
+.polaroid-card p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.rotate-left { transform: rotate(-2deg); }
+.rotate-right { transform: rotate(2deg); }
+.polaroid-card:hover {
+  transform: scale(1.05);
+}
+</style>
 
 <!-- Courses Section -->
 <section class="container my-5" id="courses" data-aos="fade-up">
@@ -289,7 +355,7 @@ footer a {
   <div class="row text-center">
     <div class="col-md-4">
       <div class="p-4 bg-white shadow impact-card">
-        <h1 class="text-primary fw-bold counter" data-target="25000">0</h1>
+        <h1 class="text-primary fw-bold counter" data-target="27000">0</h1>
         <p class="text-muted mb-0">Students Trained</p>
       </div>
     </div>
@@ -301,7 +367,7 @@ footer a {
     </div>
     <div class="col-md-4">
       <div class="p-4 bg-white shadow impact-card">
-        <h1 class="text-primary fw-bold counter" data-target="14">0</h1>
+        <h1 class="text-primary fw-bold counter" data-target="17">0</h1>
         <p class="text-muted mb-0">Years of Experience</p>
       </div>
     </div>
