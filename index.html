@@ -34,7 +34,7 @@ body::before {
 
 /* Navbar */
 .navbar {
-    background: #0d6efd;
+    background: #59606b;
 }
 .navbar-brand, .nav-link {
     color: #fff !important;
@@ -79,8 +79,13 @@ body::before {
 }
 .text-primary {
     --bs-text-opacity: 1;
+    color: rgb(18, 17, 19) !important;
+}
+.text-primar {
+    --bs-text-opacity: 1;
     color: rgb(91 47 209) !important;
 }
+
 .hero h1 {
     font-size: 3rem;
     font-weight: 700;
@@ -227,7 +232,7 @@ footer a {
   <div class="row bg-white shadow-lg rounded-4 overflow-hidden">
     <!-- Left Column: Text -->
     <div class="col-md-6 p-4 p-md-5">
-      <h2 class="fw-bold text-primary mb-3">Coach Santosh Dhage</h2>
+      <h2 class="fw-bold text-primar mb-3">Coach Santosh Dhage</h2>
       <p class="lead text-muted">
         Certified Soft Skills & Leadership Coach | NLP Practitioner | Corporate Trainer | Voice & Accent Coach | Director at Nobel Communication
       </p>
@@ -411,6 +416,7 @@ footer a {
   </div>
 </section>
 
+
 <!-- Videos -->
 <section class="container my-5 text-center" id="videos">
   <h2 class="fw-bold mb-4 text-primary">Our Coaching Videos</h2>
@@ -423,6 +429,43 @@ footer a {
     <div class="col-md-4"><div class="ratio ratio-16x9 shadow rounded"><iframe src="https://www.youtube.com/embed/YGmJ33gzwpg?si=M5eCFM2pyx5TdBE7" title="Video 6" frameborder="0" allowfullscreen></iframe></div></div>
   </div>
 </section>
+<section class="featured-section my-5">
+  <div class="container text-center">
+    <div class="featured-box">
+      <h2 class="fw-bold mb-4">
+        <span class="gradient-text">Featured In</span>
+      </h2>
+      <div class="d-flex justify-content-center align-items-center flex-wrap gap-4">
+        <img src="zee2.png" alt="ZEE 24 Taas" class="featured-logo">
+        <img src="abpmaz.png" alt="ABP Majha" class="featured-logo">
+        <img src="sam.png" alt="Saam TV" class="featured-logo">
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.featured-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+.gradient-text {
+  background: linear-gradient(90deg, #3a077b, #d900ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.featured-logo {
+  height: 137px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.featured-logo:hover {
+  transform: scale(1.1);
+}
+</style>
+
 
 <!-- Footer -->
 <footer class="text-center">
